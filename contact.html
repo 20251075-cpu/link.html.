@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="聯絡 AURA 團隊，讓我們協助你找到理想的耳機。">
+  <title>聯絡我們｜AURA 耳機</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="AURA 首頁">AURA<span>.</span></a>
+    <nav class="main-nav" aria-label="主要導覽">
+      <a href="index.html">首頁</a>
+      <a href="products.html">產品介紹</a>
+      <a href="contact.html" aria-current="page">聯絡我們</a>
+    </nav>
+    <a class="header-cta" href="products.html">探索產品 <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="page-hero content-wrap contact-hero">
+      <p class="eyebrow">WE’RE HERE FOR YOU</p>
+      <h1>想聊聊好聲音？<br>我們很樂意。</h1>
+      <p>有產品問題、合作提案或想分享聆聽心得，歡迎留言給我們。</p>
+    </section>
+
+    <section class="contact-layout content-wrap">
+      <div class="contact-details">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>保持聯繫，<br>讓對話開始。</h2>
+        <p class="contact-intro">填寫右側表單，AURA 團隊將盡快與你聯絡。</p>
+
+        <div class="contact-detail">
+          <span class="detail-label">電子郵件</span>
+          <a href="mailto:hello@aura-audio.example">hello@aura-audio.example</a>
+        </div>
+        <div class="contact-detail">
+          <span class="detail-label">服務時間</span>
+          <p>週一至週五｜09:30–18:00</p>
+        </div>
+        <div class="contact-detail">
+          <span class="detail-label">社群動態</span>
+          <p>Instagram · Facebook · YouTube</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <label for="name">你的姓名</label>
+        <input id="name" name="name" type="text" placeholder="請輸入姓名" autocomplete="name" required>
+
+        <label for="email">電子郵件</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+
+        <label for="topic">聯絡主題</label>
+        <select id="topic" name="topic" required>
+          <option value="" selected disabled>請選擇主題</option>
+          <option value="product">產品諮詢</option>
+          <option value="support">售後服務</option>
+          <option value="collaboration">合作提案</option>
+          <option value="other">其他問題</option>
+        </select>
+
+        <label for="message">留言內容</label>
+        <textarea id="message" name="message" rows="5" placeholder="告訴我們你想了解的事……" required></textarea>
+
+        <button class="button button-dark" type="submit">送出訊息 <span aria-hidden="true">→</span></button>
+        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        <p class="form-note">此為展示用表單，送出後不會實際傳送資料。</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo" href="index.html">AURA<span>.</span></a>
+    <p>© 2025 AURA AUDIO. 聆聽自由，感受每個細節。</p>
+    <a href="products.html">探索耳機系列</a>
+  </footer>
+</body>
+</html>
